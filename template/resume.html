@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js" />
+    <link rel="stylesheet" href="/static/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>My Resume</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mt-3 bg-dark">
+            <div class="card-head">
+              <div class="cont">
+             <img src="/static/images/programmer1.jfif" alt="my-image" class="img-fluid rounded">
+             <div class="buttom-left text-info display-6">David</div>
+             </div>
+            </div>
+
+            <div class="card-body mt-4">
+              <h4 class="text-info"><i class="fas fa-toolbox"></i>     {{.Work}}</h4><br>
+              
+              <h4 class="text-info"><i class="fas fa-home"></i>     {{.Place}}</h4><br>
+              
+              <h4 class="text-info"><i class="far fa-envelope"></i>  {{.Email}}</h4><br>
+
+              <h4 class="text-info"><i class="fas fa-phone"></i>  {{.PhoneNum}}</h4><br>
+              
+              <h5 class="text-success mt-5"><i class="fas fa-star"></i>  Skills</h5><br>
+              
+              <h5 class="text-light mb-3">HTML5</h5>
+              <div class="progress">
+                <div class="progress-bar" style="width:70%">70%</div>
+              </div>
+
+              <h5 class="text-light mt-3 pb-2">CSS3</h5>
+              <div class="progress">
+                <div class="progress-bar" style="width:50%">50%</div>
+              </div>
+
+              <h5 class="text-light mt-3 pb-2">BOOTSTRAP 5</h5>
+              <div class="progress">
+                <div class="progress-bar" style="width:70%">70%</div>
+              </div>
+
+              <h5 class="text-light mt-3 pb-2">JAVASCRIPT</h5>
+              <div class="progress">
+                <div class="progress-bar" style="width:63%">63%</div>
+              </div>
+
+              <h5 class="text-light mt-3 pb-2">GOLANG</h5>
+              <div class="progress">
+                <div class="progress-bar" style="width:52%">52%</div>
+              </div><br>
+
+              <h5 class="text-success mt-5"><i class="fas fa-star"></i>  Languages</h5>
+              <h5 class="text-light mt-4 pb-2">ENGLISH</h5>
+              <div class="progress">
+                <div class="progress-bar" style="width:100%">100%</div>
+              </div>
+
+              <h5 class="text-light mt-4 pb-2">IGBO</h5>
+              <div class="progress">
+                <div class="progress-bar" style="width:10%">10%</div>
+              </div>
+
+              <h5 class="text-light mt-4 pb-2">YORUBA</h5>
+              <div class="progress">
+                <div class="progress-bar" style="width:10%">10%</div>
+              </div>
+
+              <h5 class="text-light mt-4 pb-2">PIDGIN</h5>
+              <div class="progress">
+                <div class="progress-bar" style="width:80%">80%</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="mt-4 p-5 bg-info text-white rounded">
+            <h1><i class="fab fa-buffer text-danger"></i> Key Summary</h1>
+            <p class="mt-4"><kbd>My Skills</kbd></p>
+            <p class="mt-2">Coding is great, Coding is wonderful. With commitment and consistency, I've been able to improve on my <strong>Skills</strong> and i'm still improving.</p>
+          </div>
+
+          <div class="mt-3 p-5 bg-primary text-white rounded">
+            <h1><i class="fab fa-black-tie text-danger"></i> Work Experience</h1>
+            <p class="mt-4"><kbd>Web Developer</kbd></p>
+            <p class="mt-2"><i class="far fa-calendar-alt text-dark"></i> Nov 2019 - <kbd>Current</kbd></p>
+            <p>Currently developing web applications</p>
+          </div>
+
+          <div class="mt-3 p-5 bg-info text-white rounded">
+            <h1><i class="fas fa-user-tie text-danger"></i> Education</h1>
+            <p class="mt-4"><kbd>FVISS</kbd></p>
+            <p class="mt-2"><i class="far fa-calendar-alt text-dark"></i> June 2010 - June 2013</p>
+            <p>Primary School</p>
+
+            <p class="mt-4"><kbd>FVIC</kbd></p>
+            <p class="mt-2"><i class="far fa-calendar-alt text-dark"></i>  July 2013 - July 2017</p>
+            <p>Secondary School</p>
+
+            <p class="mt-4"><kbd>NIIT</kbd></p>
+            <p class="mt-2"><i class="far fa-calendar-alt text-dark"></i>  Dec 2019 - Nov 2021</p>
+            <p>Computer Based Institution</p>
+
+            <p class="mt-4"><kbd>UNILAG</kbd></p>
+            <p class="mt-2"><i class="far fa-calendar-alt text-dark"></i>  Oct 2021 - Current</p>
+            <p>University</p>
+          </div>
+
+          <div class="mt-3 p-5 bg-primary text-white rounded">
+            <h1><i class="fab fa-black-tie text-danger"></i> Number of projects Created</h1>
+            <output class="mt-4"><kbd></kbd></output>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/js/resume.js"></script>
+  </body>
+</html>

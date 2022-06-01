@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="/static/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Form</title>
+</head>
+<body class="bg-light">
+    <div class="container-fluid mt-5">
+        <div class="d-flex justify-content-center">
+                    <form method="post" action="/resume">
+                        <fieldset class="bord">
+                            <legend class="text text-danger d-flex justify-content-center" id="txt">Login</legend>
+                        <label for="eml">Email:</label>
+                        <input type="text" name="email" id="eml" required class="form-control" autocomplete="email">
+        
+                        <label for="pwd">Password:</label>
+                        <input type="password" name="password" id="pwd" required class="form-control" autocomplete="current-password"><br>
+                       <p class="text text-dark"><input type="checkbox" name="checkbox"> Remeber me</p>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        </fieldset>
+                    </form>
+        </div>
+    </div>
+
+    
+    <script src="/static/js/index.js"></script>
+</body>
+</html>

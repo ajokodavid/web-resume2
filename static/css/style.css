@@ -1,0 +1,26 @@
+.cont {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+.buttom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+.bord{
+    border: 2px solid black;
+    padding: 40px;
+    background-color: rgba(100, 100, 100, 0.40);
+    border-radius: 8px;
+}
+
+#txt{
+    font-size: x-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
