@@ -67,7 +67,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 
-	// fmt.Print("Listening on :" + port)
+	fmt.Print("Listening on :" + port)
 
 	http.ListenAndServe(":" + port, mux)
 }
